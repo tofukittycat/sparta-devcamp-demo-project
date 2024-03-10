@@ -1,3 +1,9 @@
+import Main from './_component/Main';
+
 export default async function Home() {
-  return <div>메인 홈</div>;
+  return (
+    <div>
+      <Main />
+    </div>
+  );
 }

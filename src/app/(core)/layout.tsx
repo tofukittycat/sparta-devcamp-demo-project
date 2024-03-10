@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import Header from './_component/Header';
+import Header from './_component/ui/Header';
 
 type Props = { children: ReactNode; modal: ReactNode };
 
