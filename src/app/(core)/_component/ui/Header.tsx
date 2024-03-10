@@ -1,12 +1,12 @@
 import Link from 'next/link';
-import { Input } from '@/app/_component/input';
-import { Button } from '@/app/_component/button';
+import { Input } from '@/app/_component/ui/input';
+import { Button } from '@/app/_component/ui/button';
 import { MagnifyingGlassIcon } from '@radix-ui/react-icons';
 
 export default function Header() {
   return (
     <>
-      <header className="bg-background sticky top-0 z-40 w-full border-b">
+      <header className="sticky top-0 z-40 w-full border-b">
         <div className="container flex h-20 max-w-screen-xl items-center space-x-4 sm:justify-between sm:space-x-0">
           <div className="flex flex-1 gap-6 md:gap-10 ">
             <Link href="/" className="flex flex-initial items-center space-x-2">
@@ -33,7 +33,7 @@ export default function Header() {
                   <Link href="/login">로그인</Link>
                 </Button>
                 <Button asChild>
-                  <Link href="/login">회원가입</Link>
+                  <Link href="/register">회원가입</Link>
                 </Button>
               </div>
             </div>
